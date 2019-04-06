@@ -42,6 +42,21 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EB4B3AAD22583DAB001C07FB"
+               BuildableName = "Sample-project-1Tests.xctest"
+               BlueprintName = "Sample-project-1Tests"
+               ReferencedContainer = "container:Sample-project-1.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "Sample_project_1Tests/testMainViewTitleShouldFail()">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

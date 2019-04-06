@@ -1,24 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Sample_project_1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main View Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fds-VK-9ye">
+                                <rect key="frame" x="79" y="104" width="217" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnG-7E-9K8">
+                                <rect key="frame" x="74" y="470" width="226" height="30"/>
+                                <state key="normal" title="Go to Second View Controller"/>
+                                <connections>
+                                    <action selector="goToSecondViewControllerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dri-jy-04t"/>
+                                    <segue destination="bZq-a6-9mT" kind="show" id="Xmt-eu-bjH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HnG-7E-9K8" secondAttribute="trailing" constant="75" id="04L-UO-kgk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fds-VK-9ye" secondAttribute="trailing" constant="79" id="ACk-Ue-QKm"/>
+                            <constraint firstItem="fds-VK-9ye" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="DbM-Lr-J9h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HnG-7E-9K8" secondAttribute="bottom" constant="167" id="HDj-f0-AT8"/>
+                            <constraint firstItem="HnG-7E-9K8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="Qlm-ke-fQr"/>
+                            <constraint firstItem="fds-VK-9ye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="lAP-uQ-pfs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fds-VK-9ye" secondAttribute="bottom" constant="524" id="r79-ol-3bg"/>
+                            <constraint firstItem="HnG-7E-9K8" firstAttribute="top" secondItem="fds-VK-9ye" secondAttribute="bottom" constant="327" id="t3h-8C-aGt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="fds-VK-9ye" id="JTS-ZY-foI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Wcv-in-X3g">
+            <objects>
+                <viewController id="bZq-a6-9mT" customClass="SecondViewController" customModule="Sample_project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Zh-tv-UsO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHB-jd-k6M">
+                                <rect key="frame" x="73" y="103" width="229" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD1-hz-Ek9">
+                                <rect key="frame" x="81" y="464" width="213" height="30"/>
+                                <state key="normal" title="Back to Main View Controller"/>
+                                <connections>
+                                    <action selector="goBackToMainViewAction:" destination="bZq-a6-9mT" eventType="touchUpInside" id="ck3-Li-ECH"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tMb-Tc-4EG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gla-On-w07" firstAttribute="trailing" secondItem="NHB-jd-k6M" secondAttribute="trailing" constant="73" id="BKo-YA-thV"/>
+                            <constraint firstItem="gla-On-w07" firstAttribute="bottom" secondItem="WD1-hz-Ek9" secondAttribute="bottom" constant="173" id="GLy-mm-wlC"/>
+                            <constraint firstItem="WD1-hz-Ek9" firstAttribute="leading" secondItem="gla-On-w07" secondAttribute="leading" constant="81" id="JVp-gb-V9b"/>
+                            <constraint firstItem="gla-On-w07" firstAttribute="bottom" secondItem="NHB-jd-k6M" secondAttribute="bottom" constant="528" id="Xdt-ne-Vlb"/>
+                            <constraint firstItem="WD1-hz-Ek9" firstAttribute="top" secondItem="NHB-jd-k6M" secondAttribute="bottom" constant="325" id="XmO-H4-YMC"/>
+                            <constraint firstItem="NHB-jd-k6M" firstAttribute="leading" secondItem="gla-On-w07" secondAttribute="leading" constant="73" id="ftO-IP-zbm"/>
+                            <constraint firstItem="gla-On-w07" firstAttribute="trailing" secondItem="WD1-hz-Ek9" secondAttribute="trailing" constant="81" id="ofP-9j-I5n"/>
+                            <constraint firstItem="NHB-jd-k6M" firstAttribute="top" secondItem="gla-On-w07" secondAttribute="top" constant="83" id="xvK-Vn-lHx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gla-On-w07"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="NHB-jd-k6M" id="cmj-wp-hIr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0d-9z-BHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
