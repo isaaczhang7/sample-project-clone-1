@@ -1,4 +1,4 @@
 language: swift
 xcode_workspace: Sample-project-1/Sample-project-1.xcworkspace # path to your xcodeproj folder
 xcode_scheme: Sample-project-1
-xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XR
