@@ -9,6 +9,9 @@
 import XCTest
 @testable import Sample_project_1
 
+// swiftlint:disable force_cast
+// swiftlint:disable type_name
+// swiftlint:disable line_length
 class Sample_project_1Tests: XCTestCase {
 
     override func setUp() {
