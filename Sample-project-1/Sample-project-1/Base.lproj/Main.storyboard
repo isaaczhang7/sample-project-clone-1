@@ -48,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="titleLabel" destination="fds-VK-9ye" id="JTS-ZY-foI"/>
+                        <outlet property="transitionButton" destination="HnG-7E-9K8" id="WhB-gx-VTb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

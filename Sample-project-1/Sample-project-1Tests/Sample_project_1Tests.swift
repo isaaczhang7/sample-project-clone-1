@@ -37,8 +37,8 @@ class Sample_project_1Tests: XCTestCase {
         let mainView = storyboard.instantiateInitialViewController() as! MainViewController
         let _ = mainView.view
         XCTAssertEqual("Main View Title", mainView.titleLabel.text!)
-        
     }
+    
     // This tests that the Main View Title is "Main View Title"
     func testMainViewTitleShouldFail() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -46,6 +46,14 @@ class Sample_project_1Tests: XCTestCase {
         let _ = mainView.view
         // This is not the actual title
         XCTAssertEqual("Incorrect View Title", mainView.titleLabel.text!)
+    }
+    
+    // This tests that the Main View Button is "Go to Second View Controller"
+    func testMainViewButtonText() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainView = storyboard.instantiateInitialViewController() as! MainViewController
+        let _ = mainView.view
+        XCTAssertEqual("Go to Second View Controller", mainView.transitionButton.titleLabel?.text)
     }
 
 }
