@@ -1,13 +1,13 @@
 osx_image: xcode10.1
 language: swift
-xcode_workspace: Sample-project-1/Sample-project-1.xcworkspace # path to your xcodeproj folder
-xcode_scheme: Sample-project-1
-xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XR
+# xcode_workspace: Sample-project-1/Sample-project-1.xcworkspace # path to your xcodeproj folder
+# xcode_scheme: Sample-project-1
+# xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XR
 
 
 install:
   - ./install_swiftlint.sh
 
 script: 
-  - xcodebuild build -workspace Sample-project-1/Sample-project-1.xcworkspace -scheme Sample-project-1 -destination 'platform=iOS Simulator,name=iPhone XR,OS=12.1'
+  - xcodebuild build -workspace Sample-project-1/Sample-project-1.xcworkspace -scheme Sample-project-1 -destination 'platform=iOS Simulator,name=iPhone XR,OS=12.1' | xcpretty
   - swiftlint
