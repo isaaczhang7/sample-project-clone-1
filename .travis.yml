@@ -4,8 +4,8 @@ xcode_workspace: Sample-project-1/Sample-project-1.xcworkspace # path to your xc
 xcode_scheme: Sample-project-1
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XR
 
-install:
-  - ./install_swiftlint.sh
+# install:
+#   - ./install_swiftlint.sh
 
-script:
-  - swiftlint
+# script:
+#   - swiftlint
