@@ -8,5 +8,5 @@ install:
   - ./install_swiftlint.sh
 
 script: 
-  - xcodebuild clean build -workspace Sample-project-1/Sample-project-1.xcworkspace -scheme Sample-project-1 -destination platform="iOS Simulator", OS="12.1", name="iPhone XR”
+  - xcodebuild clean build -workspace Sample-project-1/Sample-project-1.xcworkspace -scheme Sample-project-1 -destination platform="iOS Simulator", OS="12.1", name="iPhone XR"
   - swiftlint
