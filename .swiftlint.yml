@@ -1,0 +1,4 @@
+excluded:
+  - Sample-project-1/Pods
+  - Sample-project-1/screenshots
+  - Sample-project-1/fastlane
