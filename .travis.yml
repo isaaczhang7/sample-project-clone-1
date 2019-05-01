@@ -6,7 +6,6 @@ language: swift
 
 
 install:
-  - xcode-select --install
   - ./install_swiftlint.sh
 
 script: 
