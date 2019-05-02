@@ -7,7 +7,7 @@ language: swift
 
 install:
   - ./install_swiftlint.sh
-  - bundle install
+  - sudo bundle install
 
 script: 
   - swiftlint
