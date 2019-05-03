@@ -2,3 +2,4 @@ excluded:
   - Pods
   - screenshots
   - fastlane
+  - Sample-project-1UITests

@@ -9,28 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F4FA6775A22E24F22AA5B93B02E53B6F"
-               BuildableName = "libPods-Sample-project-1.a"
-               BlueprintName = "Pods-Sample-project-1"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB2E2CD52256AF36007A51A1"
-               BuildableName = "Sample-project-1.app"
-               BlueprintName = "Sample-project-1"
+               BlueprintIdentifier = "EB52D7A5227B705000EFEEB4"
+               BuildableName = "Sample-project-1UITests.xctest"
+               BlueprintName = "Sample-project-1UITests"
                ReferencedContainer = "container:Sample-project-1.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,21 +32,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB4B3AAD22583DAB001C07FB"
-               BuildableName = "Sample-project-1Tests.xctest"
-               BlueprintName = "Sample-project-1Tests"
-               ReferencedContainer = "container:Sample-project-1.xcodeproj">
-            </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "Sample_project_1Tests/testMainViewTitleShouldFail()">
-               </Test>
-            </SkippedTests>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB52D7A5227B705000EFEEB4"
                BuildableName = "Sample-project-1UITests.xctest"
                BlueprintName = "Sample-project-1UITests"
@@ -68,15 +39,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB2E2CD52256AF36007A51A1"
-            BuildableName = "Sample-project-1.app"
-            BlueprintName = "Sample-project-1"
-            ReferencedContainer = "container:Sample-project-1.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -90,16 +52,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB2E2CD52256AF36007A51A1"
-            BuildableName = "Sample-project-1.app"
-            BlueprintName = "Sample-project-1"
+            BlueprintIdentifier = "EB52D7A5227B705000EFEEB4"
+            BuildableName = "Sample-project-1UITests.xctest"
+            BlueprintName = "Sample-project-1UITests"
             ReferencedContainer = "container:Sample-project-1.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -109,16 +70,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB2E2CD52256AF36007A51A1"
-            BuildableName = "Sample-project-1.app"
-            BlueprintName = "Sample-project-1"
+            BlueprintIdentifier = "EB52D7A5227B705000EFEEB4"
+            BuildableName = "Sample-project-1UITests.xctest"
+            BlueprintName = "Sample-project-1UITests"
             ReferencedContainer = "container:Sample-project-1.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
