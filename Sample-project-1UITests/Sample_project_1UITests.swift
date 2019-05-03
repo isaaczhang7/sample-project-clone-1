@@ -39,7 +39,7 @@ class Sample_project_1UITests: XCTestCase {
         snapshot("SecondScreenSnapshot")
         let backToMainViewControllerButton = app.buttons["Back to Main View Controller"]
         backToMainViewControllerButton.tap()
-        snapshot("MainScreenSnapshot")
+        snapshot("MainScreenSnapshot2")
     }
 
 }
