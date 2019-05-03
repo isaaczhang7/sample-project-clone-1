@@ -12,7 +12,6 @@ install:
 
 script: 
   - swiftlint
-  # - bundle exec fastlane screenshots
-  - fastlane snapshots
+  - bundle exec fastlane snapshot
   - xcodebuild build -workspace Sample-project-1/Sample-project-1.xcworkspace -scheme Sample-project-1 -destination 'platform=iOS Simulator,name=iPhone XR,OS=12.1' build test | xcpretty
   
